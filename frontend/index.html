@@ -48,18 +48,54 @@
       </div>
 
       <div class="hero__content">
-        <h1 class="hero__heading">see what your<br />prompt became</h1>
+        <p class="hero__eyebrow"><span class="hero__eyebrow-dot" aria-hidden="true"></span> AI OBSERVABILITY / HUMAN UNDERSTANDING</p>
+        <h1 class="hero__heading">Your prompt<br />went <em>somewhere.</em></h1>
         <p class="hero__intro">
-          Whyso AI is an AI observability startup focused on making the
-          relationship between prompts and AI-generated responses easier to
-          understand — a visual layer between what you ask and what the AI
-          answers.
+          See the path between what you asked and what the model answered.
+          WHYso makes the hidden steps of AI easier to inspect.
         </p>
-        <a class="cb-button cb-button--light" href="#studio">
-          <span class="cb-button__title">See how it works</span>
-          <span class="cb-button__arrow"></span>
-        </a>
+        <div class="hero__actions">
+          <a class="cb-button cb-button--light" href="#studio">
+            <span class="cb-button__title">Follow the trace</span>
+            <span class="cb-button__arrow"></span>
+          </a>
+          <a class="hero__text-link" href="#portfolio">What can go wrong? <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
+
+      <aside class="hero-trace hero-trace--open" aria-label="Illustrative relationship between an instruction, its source context, and an AI response">
+        <div class="open-trace__heading">PROMPT <span aria-hidden="true">/</span> RESPONSE</div>
+
+        <div class="open-trace__timeline">
+          <span class="open-trace__start-dot" aria-hidden="true"></span>
+          <span class="open-trace__example">EXAMPLE 01</span>
+          <span class="open-trace__rule" aria-hidden="true"></span>
+          <span class="open-trace__arrow open-trace__arrow--first" aria-hidden="true">↓</span>
+          <span class="open-trace__arrow open-trace__arrow--last" aria-hidden="true">↓</span>
+        </div>
+
+        <div class="open-trace__content">
+          <section class="open-trace__item open-trace__item--instruction">
+            <p class="open-trace__label">THE INSTRUCTION</p>
+            <p class="open-trace__serif">“Use only the information provided.”</p>
+          </section>
+
+          <section class="open-trace__item open-trace__item--source">
+            <p class="open-trace__label">SOURCE CONTEXT</p>
+            <p class="open-trace__serif">Refunds are accepted within <span class="open-trace__linked">30 days</span> of purchase.</p>
+          </section>
+
+          <section class="open-trace__item open-trace__item--response">
+            <p class="open-trace__label">THE RESPONSE</p>
+            <p class="open-trace__serif">“Refunds are available within <span class="open-trace__linked">30 days</span> of purchase.”</p>
+          </section>
+        </div>
+
+        <svg class="open-trace__relation" viewBox="0 0 120 190" role="img" aria-label="A curved line connects the matching phrase in the source context and response">
+          <path d="M 18 16 C 18 62, 102 72, 102 112" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <path d="M 96 105 L 102 113 L 108 105" fill="none" stroke="currentColor" stroke-width="1.2" />
+        </svg>
+      </aside>
 
       <div class="hero__ticker">
         <div class="hero__ticker-track">
